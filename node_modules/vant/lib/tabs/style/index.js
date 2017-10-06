@@ -1,0 +1,1 @@
+require('../../vant-css/base.css');

@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for timePicker/clockHours.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">timePicker/</a> clockHours.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.75% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/61</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">8.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">7.27% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/55</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//
+//
+//
+//
+//
+//
+//
+//
+&nbsp;
+import clockNumber from './clockNumber'
+import clockPointer from './clockPointer'
+import {getTouchEventOffsetValues, rad2deg} from './timeUtils'
+export default <span class="fstat-no" title="function not covered" >{</span>
+  props: {
+    format: <span class="fstat-no" title="function not covered" >{</span>
+      type: String,
+      default: 'ampm',
+      validator (val) {
+<span class="cstat-no" title="statement not covered" >        r</span>eturn ['ampm', '24hr'].indexOf(val) !== -1
+      }
+    },
+    initialHours: {
+      type: Number,
+      default: new Date().getHours()
+    }
+  },
+  computed: <span class="fstat-no" title="function not covered" >{</span>
+    hours () {
+<span class="cstat-no" title="statement not covered" >      c</span>onst hourSize = this.format === 'ampm' ? 12 : 24
+<span class="cstat-no" title="statement not covered" >      c</span>onst hours = []
+<span class="cstat-no" title="statement not covered" >      for (let i = 1; i &lt;= hourSize; i++) {</span>
+<span class="cstat-no" title="statement not covered" >        h</span>ours.push(i % 24)
+      }
+<span class="cstat-no" title="statement not covered" >      r</span>eturn hours
+    }
+  },
+  methods: <span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" >{</span></span></span></span></span></span></span></span>
+    getSelected () {
+<span class="cstat-no" title="statement not covered" >      l</span>et hour = this.initialHours
+<span class="cstat-no" title="statement not covered" >      if (this.format === 'ampm') {</span>
+<span class="cstat-no" title="statement not covered" >        h</span>our %= 12
+<span class="cstat-no" title="statement not covered" >        h</span>our = hour || 12
+      }
+<span class="cstat-no" title="statement not covered" >      r</span>eturn hour
+    },
+    isMousePressed (event) {
+<span class="cstat-no" title="statement not covered" >      if (typeof event.buttons === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered" >        r</span>eturn event.nativeEvent.which
+      }
+<span class="cstat-no" title="statement not covered" >      r</span>eturn event.buttons
+    },
+    handleUp (event) {
+<span class="cstat-no" title="statement not covered" >      e</span>vent.preventDefault()
+<span class="cstat-no" title="statement not covered" >      t</span>his.setClock(event, true)
+    },
+    handleMove (event) {
+<span class="cstat-no" title="statement not covered" >      e</span>vent.preventDefault()
+<span class="cstat-no" title="statement not covered" >      if (this.isMousePressed(event) !== 1) <span class="cstat-no" title="statement not covered" >r</span></span>eturn
+<span class="cstat-no" title="statement not covered" >      t</span>his.setClock(event, false)
+    },
+&nbsp;
+    handleTouchMove (event) {
+<span class="cstat-no" title="statement not covered" >      e</span>vent.preventDefault()
+<span class="cstat-no" title="statement not covered" >      t</span>his.setClock(event.changedTouches[0], false)
+    },
+&nbsp;
+    handleTouchEnd (event) {
+<span class="cstat-no" title="statement not covered" >      e</span>vent.preventDefault()
+<span class="cstat-no" title="statement not covered" >      t</span>his.setClock(event.changedTouches[0], true)
+    },
+&nbsp;
+    setClock (event, finish) {
+<span class="cstat-no" title="statement not covered" >      if (typeof event.offsetX === 'undefined') {</span>
+<span class="cstat-no" title="statement not covered" >        c</span>onst offset = getTouchEventOffsetValues(event)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        e</span>vent.offsetX = offset.offsetX
+<span class="cstat-no" title="statement not covered" >        e</span>vent.offsetY = offset.offsetY
+      }
+<span class="cstat-no" title="statement not covered" >      c</span>onst hours = this.getHours(event.offsetX, event.offsetY)
+<span class="cstat-no" title="statement not covered" >      t</span>his.$emit('change', hours, finish)
+    },
+&nbsp;
+    getHours (offsetX, offsetY) {
+<span class="cstat-no" title="statement not covered" >      c</span>onst step = 30
+<span class="cstat-no" title="statement not covered" >      c</span>onst x = offsetX - this.center.x
+<span class="cstat-no" title="statement not covered" >      c</span>onst y = offsetY - this.center.y
+<span class="cstat-no" title="statement not covered" >      c</span>onst cx = this.basePoint.x - this.center.x
+<span class="cstat-no" title="statement not covered" >      c</span>onst cy = this.basePoint.y - this.center.y
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      c</span>onst atan = Math.atan2(cx, cy) - Math.atan2(x, y)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      l</span>et deg = rad2deg(atan)
+<span class="cstat-no" title="statement not covered" >      d</span>eg = Math.round(deg / step) * step
+<span class="cstat-no" title="statement not covered" >      d</span>eg %= 360
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      l</span>et value = Math.floor(deg / step) || 0
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      c</span>onst delta = Math.pow(x, 2) + Math.pow(y, 2)
+<span class="cstat-no" title="statement not covered" >      c</span>onst distance = Math.sqrt(delta)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      v</span>alue = value || 12
+<span class="cstat-no" title="statement not covered" >      if (this.format === '24hr') {</span>
+<span class="cstat-no" title="statement not covered" >        if (distance &lt; 90) {</span>
+<span class="cstat-no" title="statement not covered" >          v</span>alue += 12
+<span class="cstat-no" title="statement not covered" >          v</span>alue %= 24
+        }
+      } else {
+<span class="cstat-no" title="statement not covered" >        v</span>alue %= 12
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      r</span>eturn value
+    }
+&nbsp;
+  },
+  mounted () {
+<span class="cstat-no" title="statement not covered" >    c</span>onst clockElement = this.$refs.mask
+<span class="cstat-no" title="statement not covered" >    t</span>his.center = {
+      x: clockElement.offsetWidth / 2,
+      y: clockElement.offsetHeight / 2
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.basePoint = {
+      x: this.center.x,
+      y: 0
+    }
+  },
+  components: {
+    'clock-number': clockNumber,
+    'clock-pointer': clockPointer
+  }
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Dec 03 2016 15:46:01 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import './common/var.css';
+
+.van-actionsheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $text-color;
+  transition: .2s ease-out;
+  background-color: $background-color;
+
+  &--withtitle {
+    background-color: $white;
+  }
+
+  &__item {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    background-color: $white;
+
+    &:active {
+      background-color: $active-color;
+    }
+  }
+
+  &__subname {
+    font-size: 12px;
+    color: $gray-darker;
+  }
+
+  &__loading {
+    display: inline-block;
+  }
+
+  &__cancel {
+    margin-top: 10px;
+  }
+
+  &__header {
+    line-height: 44px;
+    text-align: center;
+
+    .van-icon-close {
+      top: 11px;
+      right: 15px;
+      position: absolute;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  &-float-enter,
+  &-float-leave-active {
+    transform: translate3d(0, 100%, 0);
+  }
+}
